@@ -26,7 +26,6 @@ namespace Q5
 			
 			for (DateTime AS=dt; AS < dtyears.AddYears(1); AS = AS.AddDays(7))
 			{
-				
 				Console.WriteLine(AS);
 			}
 
