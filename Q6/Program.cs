@@ -12,17 +12,20 @@ namespace Q6
 		{
 			DateTime today = DateTime.Today;
 			int number = Convert.ToInt32(today.Day);
-			if(number<11)
+			string print = string.Empty;
+
+			if(number>20)
 			{
-				Console.WriteLine("上旬");
+				print = "下旬";
 			}
-			else if(number>=11 && number<=20)
+			else if(number>10)
 			{
-				Console.WriteLine("中旬");
-			}else if(number<=31)
+				print="中旬";
+			}else 
 			{
-				Console.WriteLine("下旬");
+				print = "上旬";
 			}
+			Console.WriteLine(print);
 		}
 	}
 }
