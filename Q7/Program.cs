@@ -12,18 +12,20 @@ namespace Q7
 		{
 			DateTime time = DateTime.Now;
 			int number = Convert.ToInt32(time.Hour);
-			if (number <= 11)
+			string print=string.Empty;
+			if (number >18 )
 			{
-				Console.WriteLine("早安");
+				print="晚安";
 			}
-			else if (number >= 12 && number <= 18)
+			else if (number >11)
 			{
-				Console.WriteLine("午安");
+				print = "午安";
 			}
-			else if (number >= 19)
+			else 
 			{
-				Console.WriteLine("晚安");
+				print = "早安";
 			}
+			Console.WriteLine(print);
 		}
 	}
 }

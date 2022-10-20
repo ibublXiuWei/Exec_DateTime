@@ -10,6 +10,7 @@ namespace Q6
 	{
 		static void Main(string[] args)
 		{
+			//比較好維護
 			DateTime today = DateTime.Today;
 			int number = Convert.ToInt32(today.Day);
 			string print = string.Empty;
